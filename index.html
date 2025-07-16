@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <title>Anatomia humana</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Anatomia humana</h1>
+        <p>Haz clic en una parte de la imagen para concoer informacion sobre lo que deseas informarte</p>
+    </div>
+
+    <img src="./src/igm/cuerpo-humano-remove.png" usemap="#image-map" class="anatomy-body">
+
+    <map name="image-map">
+        <area target="_self" alt="cabeza" title="cabeza" href="#zona_cabeza" coords="350,70,50" shape="circle"
+            class="zona_cabeza">
+        <area target="_parent" alt="Mano No Derecha" title="Mano No Derecha" href="#mano_izq" coords="550,100,80"
+            shape="circle">
+        <area target="_self" alt="Mano No Izquierda" title="Mano No Izquierda" href="#zona_mano_derecha" coords="180,100,80"
+            shape="circle">
+        <area target="_blank" alt="organo reproductor" title="organo reproductor" href="#organo-reproductor"
+            coords="350,350,50" shape="circle">
+    </map>
+    <div id="zonas_cuerpo">
+        <div id="zona_cabeza">
+            <div>
+                <h2>🧠 Cabeza:</h2>
+                <p>La cabeza es la parte superior del cuerpo humano. Alberga el cerebro, los principales órganos de los sentidos y la apertura inicial de los sistemas digestivo y respiratorio.</p>
+            </div>
+        </div>
+
+        <div id="zona_mano_derecha">
+            <div>
+                <h2>Mano derecha:</h2>
+                <p>La mano derecha, al igual que la izquierda, es una estructura anatómica altamente especializada y compleja.</p>
+                <p>❤️ Curiosidades <br>
+                    La mano dominante (en el 90% de las personas, la derecha) suele ser más fuerte y hábil.<br>
+                    Tiene un mayor desarrollo cortical en el cerebro para tareas motoras finas.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
