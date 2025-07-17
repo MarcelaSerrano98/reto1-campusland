@@ -1,28 +1,88 @@
+body{
+    margin: 20px;
+}
+.container {
+    display: flex;
+    align-items: flex-start;
+ 
+    gap: 5px;
 
-.anatomy-body{
-    margin: auto ;
+}
+
+.anatomy-body {
+    margin: auto;
     width: 700px;
     height: 700px;
+
 }
-.title{
-    padding: 50px;
+
+.title {
+    padding: 30px;
+    text-align: center;
 }
-h1{
-    margin: 10px;
-    margin-left: 150px;
-}
-#zonas_cuerpo{
+
+.info-box {
+    display: none;
+    margin: 20px;
+    margin-left: 50px;
     width: 500px;
-    height: 200px;
+    /* height: 200px; */
     border: 3px solid #8B0000;
     border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 40px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
-#zona_cabeza:hover{
+
+.info-box:hover {
+    background-color: #8B0000;
+    color: #fff;
     transform: scale(1.05);
-    /* box-shadow: 0 8px 15px rgba(0,0,0,0.2); */
+}
+
+#zona_cabeza:target {
+
+    display: block;
+}
+
+#zona_mano_izq:target {
+    display: block;
+}
+
+#zona_mano_derecha:target {
+    display: block;
+}
+
+#zona_organo_reproductor:target {
+    display: block;
+}
+
+#zona_corazon:target {
+    display: block;
+}
+
+#zona_pies:target {
+    display: block;
+}
+
+#zona_estomago:target {
+    display: block;
+}
+
+#zona_rodillas:target {
+    display: block;
+}
+
+#zona_biceps:target {
+    display: block;
+}
+
+.salir {
+    background-color: red;
+    color: black;
+    border-radius: 10px;
+}
+
+.salir:hover {
+    background-color: green;
+    color: white;
 }

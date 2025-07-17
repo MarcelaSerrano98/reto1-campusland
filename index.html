@@ -10,40 +10,139 @@
 
 <body>
     <div class="title">
-        <h1>Anatomia humana</h1>
-        <p>Haz clic en una parte de la imagen para concoer informacion sobre lo que deseas informarte</p>
+        <h1>🧬Anatomia humana</h1>
+        <p>🖱️ Haz clic en una parte del cuerpo dentro de la imagen para ver información detallada sobre esa zona.</p>
     </div>
 
-    <img src="./src/igm/cuerpo-humano-remove.png" usemap="#image-map" class="anatomy-body">
+    <div class="container">
 
-    <map name="image-map">
-        <area target="_self" alt="cabeza" title="cabeza" href="#zona_cabeza" coords="350,70,50" shape="circle"
-            class="zona_cabeza">
-        <area target="_parent" alt="Mano No Derecha" title="Mano No Derecha" href="#mano_izq" coords="550,100,80"
-            shape="circle">
-        <area target="_self" alt="Mano No Izquierda" title="Mano No Izquierda" href="#zona_mano_derecha" coords="180,100,80"
-            shape="circle">
-        <area target="_blank" alt="organo reproductor" title="organo reproductor" href="#organo-reproductor"
-            coords="350,350,50" shape="circle">
-    </map>
-    <div id="zonas_cuerpo">
-        <div id="zona_cabeza">
-            <div>
-                <h2>🧠 Cabeza:</h2>
-                <p>La cabeza es la parte superior del cuerpo humano. Alberga el cerebro, los principales órganos de los sentidos y la apertura inicial de los sistemas digestivo y respiratorio.</p>
-            </div>
+        <img src="./src/igm/cuerpo-humano-remove.png" usemap="#image-map" class="anatomy-body">
+
+        <map name="image-map">
+            <area target="_self" alt="cabeza" title="cabeza" href="#zona_cabeza" coords="350,70,50" shape="circle"
+                class="zona_cabeza">
+            <area target="_self" alt="corazon" title="Corazón" href="#zona_corazon" coords="380,170,20" shape="circle">
+            <area target="_parent" alt="Mano No Derecha" title="Mano No Derecha" href="#zona_mano_izq"
+                coords="550,100,80" shape="circle">
+            <area target="_self" alt="Mano derecha" title="Mano No Izquierda" href="#zona_mano_derecha"
+                coords="160,160,40" shape="circle">
+            <area target="_self" alt="biceps" title="Biceps" href="#zona_biceps" coords="260,150,30" shape="circle">
+            <area target="_self" alt="estomago" title="Estomago" href="#zona_estomago" coords="380,250,50"
+                shape="circle">
+            <area target="_self" alt="organo reproductor" title="organo reproductor" href="#zona_organo_reproductor"
+                coords="350,350,50" shape="circle">
+            <area target="_self" alt="rodillas" title="Rodillas" href="#zona_rodillas" coords="385,470,20"
+                shape="circle">
+            <area target="_self" alt="pies" title="Pies" href="#zona_pies" coords="350,650,70" shape="circle">
+        </map>
+
+
+        <div id="zona_cabeza" class="info-box">
+            <h2>🧠 Cabeza:</h2>
+            <p>La cabeza es la parte superior del cuerpo humano. Alberga el cerebro, los principales órganos de los
+                sentidos
+                y la apertura inicial de los sistemas digestivo y respiratorio.</p>
+            <a href="#" class="salir">--Cerrar--</a>
+
         </div>
 
-        <div id="zona_mano_derecha">
-            <div>
-                <h2>Mano derecha:</h2>
-                <p>La mano derecha, al igual que la izquierda, es una estructura anatómica altamente especializada y compleja.</p>
-                <p>❤️ Curiosidades <br>
-                    La mano dominante (en el 90% de las personas, la derecha) suele ser más fuerte y hábil.<br>
-                    Tiene un mayor desarrollo cortical en el cerebro para tareas motoras finas.
-                </p>
-            </div>
+        <div id="zona_mano_izq" class="info-box">
+            <h2>✌️Mano Izquierda:</h2>
+            <p>La mano izquierda, al igual que la derecha, es una estructura anatómica altamente especializada y
+                compleja.
+            </p>
+            <p>❤️ Curiosidades <br>
+                Tiene una de las mayores concentraciones de receptores táctiles del cuerpo humano.
+            </p>
+            <a href="#" class="salir">--Cerrar--</a>
         </div>
+
+        <div id="zona_mano_derecha" class="info-box">
+            <h2>✌️Mano derecha:</h2>
+            <p>La mano derecha, al igual que la izquierda, es una estructura anatómica altamente especializada y
+                compleja.
+            </p>
+            <p>❤️ Curiosidades <br>Es la mano dominante en la mayoría de la población (aproximadamente 85%).<br>Puede
+                ser
+                afectada por:
+            </p>
+            <ul>
+                <li>Síndrome del túnel carpiano</li>
+                <li>Fracturas del escafoides</li>
+                <li>Tendinitis</li>
+                <li>Artritis</li>
+            </ul>
+            <a href="#" class="salir">--Cerrar--</a>
+        </div>
+
+        <div id="zona_organo_reproductor" class="info-box">
+            <h2>🚻Organo Reproductor:</h2>
+            <p>El sistema reproductor permite la creación de nuevas vidas. En hombres incluye pene y testículos; en
+                mujeres,
+                ovarios y útero. Produce células sexuales y hormonas. Es esencial para la reproducción y el desarrollo
+                sexual.</p>
+            <h3>Función general del sistema reproductor:</h3>
+            <ul>
+                <li>Permite la reproducción humana, la producción de células sexuales (óvulos y espermatozoides) y la
+                    síntesis de hormonas sexuales.</li>
+                <li>En el caso femenino, también sostiene el embarazo y parto</li>
+            </ul>
+            <a href="#" class="salir">--Cerrar--</a>
+        </div>
+
+        <div id="zona_corazon" class="info-box">
+            <h2>❤️ Corazón</h2>
+            <p>Órgano vital que bombea sangre a todo el cuerpo. Late unas 100 mil veces al día y mantiene en
+                funcionamiento
+                cada célula del organismo.</p>
+            <p>Está protegido por las costillas y trabaja sin descanso, incluso cuando dormimos.</p>
+            <a href="#" class="salir">--Cerrar--</a>
+        </div>
+
+        <div id="zona_estomago" class="info-box">
+            <h2>🥘 Estómago</h2>
+            <p>Órgano del sistema digestivo que descompone los alimentos con ayuda de ácidos. Es el primer paso antes de
+                absorber los nutrientes en los intestinos.</p>
+            <p>También puede contraerse al sentir emociones como nervios o miedo.</p>
+            <a href="#" class="salir">--Cerrar--</a>
+        </div>
+
+        <div id="zona_pies" class="info-box">
+            <h2>🦶 Pies</h2>
+            <p>Soportan todo el peso del cuerpo y permiten caminar, correr y mantener el equilibrio. Cada pie tiene 26
+                huesos, ¡más que toda la columna vertebral!</p>
+            <p>Son clave para la postura y el movimiento diario.</p>
+            <a href="#" class="salir">--Cerrar--</a>
+        </div>
+
+        <div class="info-box" id="zona_rodillas">
+            <h2>🦵 Rodillas</h2>
+            <p>La rodilla es una articulación compleja que permite flexionar y extender la pierna. Es esencial para
+                caminar,
+                correr y mantener el equilibrio.</p>
+            <ul>
+                <li>Une el fémur, la tibia y la rótula.</li>
+                <li>Contiene ligamentos como el cruzado anterior y posterior.</li>
+                <li>Absorbe impactos al caminar o saltar.</li>
+                <li>Puede lesionarse fácilmente en deportes.</li>
+            </ul>
+            <a href="#" class="salir">--Cerrar--</a>
+        </div>
+
+        <div class="info-box" id="zona_biceps">
+            <h2>💪 Bíceps</h2>
+            <p>El bíceps braquial es un músculo del brazo que permite doblar el codo y girar el antebrazo. También es
+                muy
+                visible al ejercitarse.</p>
+            <ul>
+                <li>Ubicado en la parte frontal del brazo.</li>
+                <li>Tiene dos porciones: larga y corta.</li>
+                <li>Participa en movimientos de tracción.</li>
+                <li>Importante en ejercicios de fuerza.</li>
+            </ul>
+            <a href="#" class="salir">--Cerrar--</a>
+        </div>
+
     </div>
 
 </body>
